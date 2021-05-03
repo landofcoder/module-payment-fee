@@ -69,6 +69,6 @@ If you encounter any problems or bugs, please <a href="https://github.com/landof
 
 <h3>Configuration</h3>
 <img src="./assets/paymentfee-config1.jpg" />
-<img src="./assets/paymentfee-config2.jpg" />
+<img src="./assets/paymentfee-config2.png" />
 
 
