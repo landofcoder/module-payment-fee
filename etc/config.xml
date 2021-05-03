@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Landofcoder
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Landofcoder.com license that is
+ * available through the world-wide-web at this URL:
+ * https://landofcoder.com/license
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   Landofcoder
+ * @package    Lof_Paymentfee
+ * @copyright  Copyright (c) 2020 Landofcoder (https://landofcoder.com/)
+ * @license    https://landofcoder.com/LICENSE-1.0.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <paymentfee>
+            <general>
+                <active>0</active>
+                <title>Payment Fee</title>
+                <is_description>0</is_description>
+                <description>Test Payment Fee Description</description>
+                <total_sortorder>35</total_sortorder>
+            </general>
+            <paymentfee_settings>
+                <pricetype>0</pricetype>
+                <include_shipping>0</include_shipping>
+                <include_discount>0</include_discount>
+                <minorderamount>0</minorderamount>
+                <maxorderamount>99999</maxorderamount>
+                <refund>1</refund>
+                <customers>0,1,2,3,4</customers>
+            </paymentfee_settings>
+            <tax>
+                <enable>0</enable>
+                <tax_class>2</tax_class>
+                <display>2</display>
+            </tax>
+        </paymentfee>
+        <sales>
+            <totals_sort>
+                <lof_paymentfee>35</lof_paymentfee>
+            </totals_sort>
+        </sales>
+    </default>
+</config>
