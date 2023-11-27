@@ -58,9 +58,13 @@ class Data extends AbstractHelper
     private $_priceHelper;
 
     /**
+     * @var CustomerSession
+     */
+    protected $customerSession;
+
+    /**
      * Data constructor.
      * @param \Magento\Framework\App\Helper\Context $context
-     * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeInterface
      * @param \Magento\Framework\Serialize\Serializer\Json $serialize
      * @param CustomerSession $customerSession
      * @param \Magento\Backend\Model\Session\Quote $sessionQuote
@@ -69,7 +73,6 @@ class Data extends AbstractHelper
      */
     public function __construct(
         \Magento\Framework\App\Helper\Context $context,
-        \Magento\Framework\App\Config\ScopeConfigInterface $scopeInterface,
         \Magento\Framework\Serialize\Serializer\Json $serialize,
         CustomerSession $customerSession,
         \Magento\Backend\Model\Session\Quote $sessionQuote,
